@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+<style>
+
+p {
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+}
+</style>
+<head>
+  <meta charset="UTF-8">
+  <title>Nawy</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+<body>
+ <div class="login" align="center">
+	<h1>Leads Classification </h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	 
+    	<p><input type="lead_mobile_network"  placeholder="Mobile network"  name="lead_mobile_network" /></p>
+      <p><input type="method_of_contact"  placeholder="Method of Contact"  name="method_of_contact" /></p>
+    	<p><input type="lead_source"  placeholder="Lead Source"  name="lead_source" /></p>
+    	<p><input type="lead_time_year"  placeholder="year"  name="lead_time_year" /></p>
+    	<p><input type="lead_time_month"  placeholder="Month"  name="lead_time_month" /></p>
+    	<p><input type="lead_time_dow"  placeholder="Day Name"  name="lead_time_dow" /></p>
+    	<p><input type="lead_time_hour"  placeholder="Hour"  name="lead_time_hour" /></p>
+    	<p><input type="campaign"  placeholder="campaign"  name="campaign" /></p>
+    	<p><input type="ad_group"  placeholder="ad_group"  name="ad_group" /></p>
+    	<p><input type="location"  placeholder="Location"  name="location" /></p>
+    	<p><input type="TotalVisits"  placeholder="Total Visits"  name="TotalVisits" /></p>
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   
+   <br> <p style="font-size:50px">{{ prediction_text }}</p>
+ </div>
+</body>
+</html>
