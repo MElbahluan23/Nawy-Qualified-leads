@@ -36,7 +36,7 @@ The main pain is generating qualified leads.
 * Other Approaches
 * Deployment using flask
 * Business Recommendations
-#### - [Presentation Link](https://drive.google.com/file/d/1mWW14-DHi0TUWcxMHVEowokwnn2Z9jvZ/view?usp=sharing](https://drive.google.com/file/d/1gVvJrAe0MN0j1y16uuMcTaFI74Mgssqy/view?usp=sharing)
+#### - [Presentation Link](https://drive.google.com/file/d/1gVvJrAe0MN0j1y16uuMcTaFI74Mgssqy/view?usp=sharing)
 ------------------------------------------------------------------------------------------------------------------
 
 # Data Dictionary
