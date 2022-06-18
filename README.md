@@ -11,8 +11,8 @@ There is a lack of information in the Egyptian real estate market. Making an inf
 In Nawy we are initiating targeting campaigns on a daily basis to generate Real estate leads.
 The main pain is generating qualified leads.
 
-    The first objective of this project is to recognize key factors that will use to know qualified lead.
-    So we need to build a model to classify the received leads into two categories: low qualified and high qualified leads.
+   * The first objective of this project is to recognize key factors that will use to know qualified lead.
+   * So we need to build a model to classify the received leads into two categories: low qualified and high qualified leads.
 
 
 ------------------------------------------------------------------------------------------------------------------
@@ -27,15 +27,16 @@ The main pain is generating qualified leads.
   * - Handling non-realistics data, outliers and   missing values.
   * - Feature Selection and Scaling
   * - Feature Engineering 
+  * - Handling imbalance data (undersampling or oversamplimg)
 * Model Selection & Evaluation metric
   * - Fine-Tune the model
   * - Hyperparameters Optimization
   * - Feature Importance selections
 * Results
 * Other Approaches
-* Deployment
+* Deployment using flask
 * Business Recommendations
-#### - [Presentation Link](https://drive.google.com/file/d/1mWW14-DHi0TUWcxMHVEowokwnn2Z9jvZ/view?usp=sharing)
+#### - [Presentation Link]([https://drive.google.com/file/d/1mWW14-DHi0TUWcxMHVEowokwnn2Z9jvZ/view?usp=sharing](https://drive.google.com/file/d/1gVvJrAe0MN0j1y16uuMcTaFI74Mgssqy/view?usp=sharing)
 ------------------------------------------------------------------------------------------------------------------
 
 # Data Dictionary
@@ -50,3 +51,13 @@ The main pain is generating qualified leads.
 * **campaign** Name of the targeting campaign
 * **Location** The location which the customer is searching for
 * **Low_qualified** Define if the lead is low or high qualified
+
+
+## Instructions :-
+1) Install "requirement.txt" Packages :- 
+   - "pip install -r requirements.txt"
+2) Download " Dataset".
+   - [Dataset](https://drive.google.com/file/d/1fVKBF2QPBTAmlf_FOgyqRBku43a9j26f/view?usp=sharing)
+3) Place "dataset.csv" and "Behaviour.tsv" in "./dataset/".
+4) Run "app.py".
+5) Open http://127.0.0.1:5000/
