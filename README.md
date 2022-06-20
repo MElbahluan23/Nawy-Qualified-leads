@@ -54,10 +54,9 @@ The main pain is generating qualified leads.
 
 
 ## Instructions :-
-1) Install "requirement.txt" Packages :- 
-   - "pip install -r requirements.txt"
+1) Install "requirement.txt" Packages  
 2) Download " Dataset".
    - [Dataset](https://drive.google.com/file/d/1fVKBF2QPBTAmlf_FOgyqRBku43a9j26f/view?usp=sharing)
-3) Place "dataset.csv" and "Behaviour.tsv" in "./dataset/".
+3) Place "dataset.csv" in "./dataset/".
 4) Run "app.py".
 5) Open http://127.0.0.1:5000/
